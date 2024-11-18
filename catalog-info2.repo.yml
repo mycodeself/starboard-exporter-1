@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: starboard-exporter-1
+  description: A standalone exporter for vulnerability reports and other CRs created by Starboard.
+  annotations:
+    github.com/project-slug: mycodeself/starboard-exporter-1
+spec:
+  type: github-repository
+  owner: NamedUser(login="mycodeself")
+  lifecycle: stable
