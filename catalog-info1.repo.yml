@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: $repo.name$
+  description: $repo.description$
+  annotations:
+    github.com/project-slug: $repo.full_name$
+spec:
+  type: github-repository
+  owner: $repo.owner$
+  lifecycle: stable
